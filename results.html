@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated LG Beam</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generated LG Beam</h1>
+    <div>
+        <h2>Cropped LG Beam</h2>
+        <img src="data:image/png;base64,{{ img_data }}" alt="Cropped LG Beam">
+    </div>
+
+    <h3>Input Values:</h3>
+    <p>L: {{ l }}</p>
+    <p>P: {{ p }}</p>
+    <p>J: {{ j }}</p>
+    <p>Beam Size: {{ beam_size }} mm</p>
+    <p>Delta: {{ delta }}</p>
+    <p>Crop Size X: {{ crop_x }} pixels</p>
+    <p>Crop Size Y: {{ crop_y }} pixels</p>
+
+    <br>
+    <a href="/download/intensity"><button>Download Intensity BMP</button></a>
+    <a href="/download/phase"><button>Download Phase BMP</button></a>
+
+    <br>
+    <a href="/">Back to Input</a>
+</body>
+</html>
