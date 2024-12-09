@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LG Beam Generator</title>
+</head>
+<body>
+    <h1>LG Beam Generator</h1>
+    <form action="/generate" method="post">
+        <label>Topological Charge (l):</label>
+        <input type="number" name="l" required><br>
+        <label>Radial Index (p):</label>
+        <input type="number" name="p" required><br>
+        <label>Parameter (j):</label>
+        <input type="number" name="j" required><br>
+        <label>Beam Size (mm):</label>
+        <input type="number" name="beam_size" required><br>
+        <label>Asymmetry Parameter (delta):</label>
+        <input type="number" name="delta" required><br>
+        <label>Crop Size X (pixels):</label>
+        <input type="number" name="crop_x" required><br>
+        <label>Crop Size Y (pixels):</label>
+        <input type="number" name="crop_y" required><br>
+        <button type="submit">Generate Beam</button>
+    </form>
+</body>
+</html>
