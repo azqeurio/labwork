@@ -1,0 +1,8 @@
+runtime: python39
+entrypoint: python main.py
+
+automatic_scaling:
+  max_instances: 1  # 동시에 실행되는 인스턴스 최대 1개 제한
+  min_instances: 0  # 유휴 상태일 때 인스턴스를 종료
+  target_cpu_utilization: 0.6  # CPU 사용량 목표치
+  target_throughput_utilization: 0.7  # 요청 처리량 목표치
